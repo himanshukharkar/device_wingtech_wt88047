@@ -179,5 +179,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libwpa_client
 
+#app
+PRODUCT_PACKAGES +=\
+MiXplorer
+
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)

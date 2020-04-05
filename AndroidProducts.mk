@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wt88047.mk
+    $(LOCAL_DIR)/aim_wt88047.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_wt88047-user \
-    lineage_wt88047-userdebug \
-    lineage_wt88047-eng
+    aim_wt88047-user \
+    aim_wt88047-userdebug \
+    aim_wt88047-eng
