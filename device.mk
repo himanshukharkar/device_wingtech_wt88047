@@ -141,11 +141,11 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
-    telephony-ext
+    
 
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system \
-    telephony-ext
+    
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
@@ -178,6 +178,16 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libwpa_client
+
+#HALS
+PRODUCT_SOONG_NAMESPACES += \
+hardware/qcom/audio \
+hardware/qcom/media \
+hardware/qcom/display
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
 
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
