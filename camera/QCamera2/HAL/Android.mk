@@ -50,7 +50,7 @@ endif
 
 LOCAL_C_INCLUDES += \
      hardware/qcom/display/libqservice
-#LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_SHARED_LIBRARIES := libcamera_client liblog libhardware libutils libcutils libdl libsensor
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libqdMetaData
 ifeq ($(TARGET_TS_MAKEUP),true)
