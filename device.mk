@@ -91,8 +91,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/vendor/usr/keylayout/gpio-keys.kl
 
 # Lights
+#PRODUCT_PACKAGES += \
+#    android.hardware.light@2.0-service.aw2013
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.aw2013
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
 
 # Media
 PRODUCT_COPY_FILES += \
