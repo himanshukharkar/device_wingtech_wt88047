@@ -18,11 +18,14 @@ $(call inherit-product, device/wingtech/wt88047/full_wt88047.mk)
 # Inherit some common Paranoid Android stuff
 $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
+# Inherit some Qcom common stuff
+$(call inherit-product, device/qcom/common/common.mk)
+
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 TARGET_BOOT_ANIMATION_RES := 720
 
-# No GAPPS 
+# No GAPPS
 TARGET_DISABLES_GAPPS := true
 
 #ASSERTS
