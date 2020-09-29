@@ -101,3 +101,5 @@ TARGET_LD_SHIM_LIBS += \
 
 # inherit from the proprietary version
 include vendor/wingtech/wt88047/BoardConfigVendor.mk
+
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
